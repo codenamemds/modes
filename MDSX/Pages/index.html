@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CODENAME_MDS: Mars D. Silver</title>
-    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="MDSX/style.css" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body class="home-page">
@@ -13,6 +13,7 @@
     </div>
     <!-- Grid Background -->
     <div class="grid-background"></div>
+    
     <!-- Geometric Elements -->
     <div class="geometric-elements">
         <div class="geometric-element geo-square geo-pos-1"></div>
@@ -21,40 +22,142 @@
         <div class="geometric-element geo-square geo-pos-4"></div>
         <div class="geometric-element geo-circle geo-pos-5"></div>
     </div>
+
     <header>
         <nav-component></nav-component>
     </header>
+
     <main id="mainContent">
-      <section class="hero-section">
-        <div class="hero-image-container">
-            <img src="../assets/images/MDS-2.jpg" alt="Mars D. Silver" class="hero-background-image" />
-            <div class="hero-overlay"></div>
-        </div>
-        <div class="hero-content">
-            <div class="hero-text-container">
-                <h1 class="hero-title">CODENAME_MDS</h1>
-                <h2 class="hero-subtitle scramble-text">MARS D. SILVER</h2>
-                <p class="hero-tagline typewriter-text">Designer</p>
-                <p class="hero-description letter-hover">Where Art, Design, Tech + Culture Collide</p>
+        <!-- Hero Section with Background Image -->
+        <section class="hero-section">
+            <div class="hero-image-container">
+                <img src="../assets/images/MDS-2.jpg" alt="Mars D. Silver" class="hero-background-image" />
+                <div class="hero-overlay"></div>
             </div>
-            <div class="scroll-indicator glow-pulse">
-                <span>Scroll to explore</span>
-                <i class='bx bx-chevron-down'></i>
+            <div class="hero-content">
+                <div class="hero-text-wrapper">
+                  <div class="hero-text-container">
+                      <h1 class="hero-title">CODENAME_MDS</h1>
+                      <h2 class="hero-subtitle scramble-text">MARS D. SILVER</h2>
+                      <p class="hero-tagline typewriter-text">Designer</p>
+                      <p class="hero-description letter-hover">Shaping Space Where Art, Design, Tech + Culture Collide</p>
+                  </div>
+                </div>
+                <div class="scroll-indicator glow-pulse hero-scroll-bottom">
+                    <button class="scroll-btn" aria-label="Scroll to explore">
+                        <i class='bx bx-chevron-down'></i>
+                    </button>
+                </div>
             </div>
-        </div>
-      </section>
-      <!-- You can add more main content here if needed -->
+        </section>
+
+        <!-- Section Divider -->
+        <div class="section-divider"></div>
+
+        <!-- About Me Section -->
+        <section class="about-section section-brackets" data-scroll="fade-up">
+            <div class="content-container">
+                                <a href="../Pages/about.html" class="matrix-text about-link" data-text="About Mars D. Silver">
+                                    <h2>About Mars D. Silver</h2>
+                                </a>
+                <div class="about-content">
+                    <div class="about-text" data-scroll="fade-right">
+                        <p>My name is Mars Delavonta Silver - I am an artist, designer, cultural curator, and tech professional born and bred on the South Side of Chicago, IL.</p>
+                        <p>I specialize in creating digital experiences that bridge the gap between art, technology, and culture. Through MODES-X, I explore the intersection of design thinking and technological innovation.</p>
+                        <p>My work spans across multiple disciplines including web development, graphic design, music composition, and cultural curation, always with a focus on authentic storytelling and community engagement.</p>
+                    </div>
+                    <div class="about-image" data-scroll="fade-left">
+                        <img src="../assets/images/MDS-3.jpg" alt="Mars D. Silver" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Divider -->
+        <section class="compositions-section section-brackets">
+            <div class="content-container">
+                <h2>Recent Compositions</h2>
+                <div class="compositions-grid">
+                    <a href="../Pages/compositions/i.c.stars.html" class="composition-card">
+                        <div class="composition-image">
+                            <img src="../assets/images/MDS title.jpg" alt="i.c.stars - Mars in a New Galaxy" />
+                        </div>
+                        <div class="composition-info">
+                            <h3 class="composition-title letter-hover">i.c.stars - Mars in a New Galaxy</h3>
+                            <p>The Adventures of Mars D. Silver: Gateway to Galaxy reimagines the i.c.stars journey as a hero’s path, where Mars transforms from an aspiring intern into a tech-powered changemaker. This visual narrative reflects the real-world challenges and triumphs faced during the program—from coding and consulting to resilience, public speaking, and growth through feedback.</p>
+                            <span class="composition-keyword">Subject: Business, Leadership, Technology</span>
+                            <span class="composition-link">Read <i class='bx bx-book'></i></span>
+                        </div>
+                    </a>
+                    <a href="../Pages/compositions/meditrack.html" class="composition-card">
+                        <div class="composition-image">
+                            <img src="../assets/images/med" alt="MedTrack" />
+                        </div>
+                        <div class="composition-info">
+                            <h3 class="composition-title scramble-text">MEDTRACK</h3>
+                            <!-- "Medline" is a proper noun/company name -->
+                            <p>Inside the design process of MedTrack. A digital recovery tool created for <span class="proper-noun">Medline</span> (as a part of a deliverable for i.c.stars internship) that guides patients through post-surgical care with structured plans, wellness tracking, and direct access to <span class="proper-noun">Medline</span> at Home products.</p>
+                            <span class="composition-keyword">Subject: Healthcare, i.c.stars, Software Development </span>
+                            <span class="composition-link">Read <i class='bx bx-book'></i></span>
+                        </div>
+                    </a>
+                    <a href="../Pages/compositions/phishing.html" class="composition-card">
+                        <div class="composition-image">
+                            <img src="../assets/images/MDS-4.jpg" alt="Phishing: No Bait, No Bite" />
+                        </div>
+                        <div class="composition-info">
+                            <h3 class="composition-title magnetic-text">Phishing: No Bait, No Bite</h3>
+                            <p>In this composition, we explore the evolving landscape of phishing attacks and the importance of cybersecurity awareness. Through engaging personal narratives and practical insights.</p>
+                            <p> <b>Upcoming Composition</b></p>
+                            <span class="composition-keyword">Subject: Cybersecurity, Awareness</span>
+                            <span class="composition-link">Read <i class='bx bx-book'></i></span>
+                        </div>
+                    </a>
+                    <a href="../Pages/compositions/rebuilding-self.html" class="composition-card">
+                        <div class="composition-image">
+                            <img src="../assets/images/MDS-1.jpg" alt="Rebuilding Self" />
+                        </div>
+                        <div class="composition-info">
+                            <h3 class="composition-title">Rebuilding Self</h3>
+                            <p>Break. Build. Become.</p>
+                            <p>In Rebuilding Self: Break. Build. Become., Mars D. Silver reflects on what it means to start over after years of stillness and how breaking apart became the first act in the process of becoming whole.</p> 
+                            <p> <b>Upcoming Composition</b></p>
+                            <span class="composition-keyword">Subject: Personal Growth, Transformation</span>
+                            <span class="composition-link">Read <i class='bx bx-book'></i></span>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="view-all-compositions" data-scroll="fade-up">
+                    <a href="../Pages/compositions.html" class="cta-button">
+                        View All Compositions <i class='bx bx-right-arrow-alt'></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- Call to Action Section -->
+        <section class="cta-section" data-scroll="fade-up">
+            <div class="content-container">
+                <h2>Let's Create Something Together</h2>
+                <p>Ready to collaborate on your next project? Let's connect and bring your vision to life.</p>
+                <div class="cta-buttons">
+                    <a href="../Pages/connect.html" class="cta-button primary">Get In Touch</a>
+                    <a href="../Pages/projects.html" class="cta-button secondary">View Projects</a>
+                </div>
+            </div>
+        </section>
     </main>
+
     <footer id="mainFooter">
         <footer-component></footer-component>
     </footer>
+
     <script src="../js/components/nav-component.js"></script>
     <script src="../js/components/footer-component.js"></script>
     <script src="../js/theme-toggle.js"></script>
-    <script src="../js/features/boot-sequence.js"></script>
     <script src="../js/features/dynamic-scroll.js"></script>
     <script src="../js/features/text-effects.js"></script>
     <script src="../js/features/timeline.js"></script>
     <script src="../js/utils/geometric-lines.js"></script>
-</body>
+  </body>
 </html>
