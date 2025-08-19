@@ -1,0 +1,1 @@
+// This file contains the main JavaScript logic for the project. It may include event listeners and other functionality for the web application.

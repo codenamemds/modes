@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect - CODENAME_MDS</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <nav-component></nav-component>
+    </header>
+
+    <main>
+        <section>
+            <h1>Connect With CODENAME_MDS</h1>
+
+            <!-- Social Media Widgets Section (prep for future integration) -->
+            <div class="social-widgets">
+                <h2>Recent Social Media Posts</h2>
+                <div class="widget-row">
+                    <div class="widget-placeholder" id="facebook-widget">
+                        <!-- Facebook widget will go here -->
+                        <p>Facebook feed coming soon…</p>
+                    </div>
+                    <div class="widget-placeholder" id="twitter-widget">
+                        <!-- Twitter widget will go here -->
+                        <p>Twitter feed coming soon…</p>
+                    </div>
+                    <div class="widget-placeholder" id="youtube-widget">
+                        <!-- YouTube widget will go here -->
+                        <p>YouTube feed coming soon…</p>
+                    </div>
+                    <div class="widget-placeholder" id="instagram-widget">
+                        <!-- Instagram widget will go here -->
+                        <p>Instagram feed coming soon…</p>
+                    </div>
+                    <div class="widget-placeholder" id="linkedin-widget">
+                        <!-- LinkedIn widget will go here -->
+                        <p>LinkedIn feed coming soon…</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="connection-links">
+                <ul>
+                    <li><a href="https://www.facebook.com/marsdsilver">Follow MDS on Facebook</a></li>
+                    <li><a href="https://www.twitter.com/codename_mds">Follow MDS on Twitter</a></li>
+                    <li><a href="https://www.youtube.com/codename_mds">Follow MDS On YouTube</a></li>
+                    <li><a href="https://github.com/codenameMDS">Check Out MDS on GitHub</a></li>
+                </ul>
+            </div>
+
+            <br>
+            <p>Send A Message</p>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <footer-component></footer-component>
+    </footer>
+
+    <script src="../js/components/nav-component.js"></script>
+    <script src="../js/components/footer-component.js"></script>
+    <script src="../js/theme-toggle.js"></script>
+    <script type="module" src="../js/features/connect-enhancements.js"></script>
+</body>
+</html>
+
+
+

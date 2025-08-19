@@ -1,0 +1,20 @@
+{
+  "name": "mdsx-tailwind-project",
+  "version": "1.0.0",
+  "description": "A project utilizing Tailwind CSS for the About page of Mars D. Silver.",
+  "main": "src/js/main.js",
+  "scripts": {
+    "build": "postcss src/styles/input.css -o dist/css/output.css",
+    "watch": "postcss src/styles/input.css -o dist/css/output.css --watch",
+    "start": "live-server dist"
+  },
+  "author": "Mars D. Silver",
+  "license": "MIT",
+  "dependencies": {
+    "tailwindcss": "^2.2.19",
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.4.0",
+    "live-server": "^1.2.1"
+  },
+  "devDependencies": {}
+}

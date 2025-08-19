@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - CODENAME_MDS</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body class="about-page">
+    <!-- Grid Background -->
+    <div class="grid-background"></div>
+    
+    <!-- Geometric Elements -->
+    <div class="geometric-elements">
+        <div class="geometric-element geo-square geo-square-pos"></div>
+        <div class="geometric-element geo-circle geo-circle-pos"></div>
+        <div class="geometric-element geo-triangle geo-triangle-pos"></div>
+    </div>
+
+    <header>
+        <nav-component></nav-component>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="about-hero-section section-brackets">
+            <div class="content-container">
+                <h1 class="glitch-text" data-text="About CODENAME_MDS">About CODENAME_MDS</h1>
+                <div class="about-hero-content">
+                    <div class="hero-image-container">
+                        <img src="../assets/images/MDS-3.jpg" alt="Mars D. Silver" class="about-hero-image" />
+                        <div class="image-scan-line"></div>
+                    </div>
+                    <div class="hero-text">
+                        <p class="scramble-text">My name is Mars Delavonta Silver - I am an artist, designer, cultural curator, and tech professional born and bred on the South Side of Chicago, IL.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Divider -->
+        <div class="section-divider"></div>
+
+        <!-- Interactive Timeline Section -->
+        <section class="timeline-section section-brackets">
+            <div class="content-container">
+                <h2 class="magnetic-text">Experience Timeline</h2>
+                <div class="timeline-controls">
+                    <button class="timeline-control active" data-category="all">All</button>
+                    <button class="timeline-control" data-category="design">Design</button>
+                    <button class="timeline-control" data-category="tech">Tech</button>
+                    <button class="timeline-control" data-category="art">Art</button>
+                </div>
+                
+                <div class="timeline-container" id="timelineContainer">
+                    <div class="timeline-line">
+                        <div class="timeline-progress"></div>
+                        <div class="timeline-scanner"></div>
+                    </div>
+                    
+                    <div class="timeline-item" data-year="2024" data-category="tech design">
+                        <div class="timeline-marker">
+                            <div class="marker-pulse"></div>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2024</div>
+                            <h3>Senior UX Designer</h3>
+                            <p>Leading design systems and user experience across multiple platforms</p>
+                            <div class="timeline-tech-stack">
+                                <span class="tech-tag">Figma</span>
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">Design Systems</span>
+                            </div>
+                        </div>
+                        <div class="timeline-connector"></div>
+                    </div>
+
+                    <div class="timeline-item" data-year="2023" data-category="art design">
+                        <div class="timeline-marker">
+                            <div class="marker-pulse"></div>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2023</div>
+                            <h3>Cultural Curator & Artist</h3>
+                            <p>Curating digital art experiences and multimedia installations</p>
+                            <div class="timeline-tech-stack">
+                                <span class="tech-tag">Digital Art</span>
+                                <span class="tech-tag">Curation</span>
+                                <span class="tech-tag">Installations</span>
+                            </div>
+                        </div>
+                        <div class="timeline-connector"></div>
+                    </div>
+
+                    <div class="timeline-item" data-year="2022" data-category="tech">
+                        <div class="timeline-marker">
+                            <div class="marker-pulse"></div>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2022</div>
+                            <h3>Frontend Developer</h3>
+                            <p>Building responsive web applications with modern frameworks</p>
+                            <div class="timeline-tech-stack">
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Vue.js</span>
+                                <span class="tech-tag">CSS3</span>
+                            </div>
+                        </div>
+                        <div class="timeline-connector"></div>
+                    </div>
+
+                    <div class="timeline-item" data-year="2021" data-category="design">
+                        <div class="timeline-marker">
+                            <div class="marker-pulse"></div>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2021</div>
+                            <h3>Visual Designer</h3>
+                            <p>Creating brand identities and visual experiences for startups</p>
+                            <div class="timeline-tech-stack">
+                                <span class="tech-tag">Adobe CC</span>
+                                <span class="tech-tag">Branding</span>
+                                <span class="tech-tag">UI/UX</span>
+                            </div>
+                        </div>
+                        <div class="timeline-connector"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Divider -->
+        <div class="section-divider"></div>
+
+        <!-- Skills Matrix Section -->
+        <section class="skills-section section-brackets">
+            <div class="content-container">
+                <h2 class="letter-hover">Skills Matrix</h2>
+                <div class="skills-grid">
+                    <div class="skill-category" data-scroll="fade-up">
+                        <h3>Design</h3>
+                        <div class="skill-bars">
+                            <div class="skill-bar" data-skill="90">
+                                <span>UI/UX Design</span>
+                                <div class="progress-bar"><div class="progress-fill"></div></div>
+                            </div>
+                            <div class="skill-bar" data-skill="85">
+                                <span>Visual Design</span>
+                                <div class="progress-bar"><div class="progress-fill"></div></div>
+                            </div>
+                            <div class="skill-bar" data-skill="80">
+                                <span>Brand Identity</span>
+                                <div class="progress-bar"><div class="progress-fill"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category" data-scroll="fade-up" data-scroll-delay="200">
+                        <h3>Technology</h3>
+                        <div class="skill-bars">
+                            <div class="skill-bar" data-skill="88">
+                                <span>Frontend Development</span>
+                                <div class="progress-bar"><div class="progress-fill"></div></div>
+                            </div>
+                            <div class="skill-bar" data-skill="75">
+                                <span>JavaScript</span>
+                                <div class="progress-bar"><div class="progress-fill"></div></div>
+                            </div>
+                            <div class="skill-bar" data-skill="82">
+                                <span>CSS/SCSS</span>
+                                <div class="progress-bar"><div class="progress-fill"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category" data-scroll="fade-up" data-scroll-delay="400">
+                        <h3>Creative</h3>
+                        <div class="skill-bars">
+                            <div class="skill-bar" data-skill="92">
+                                <span>Art Direction</span>
+                                <div class="progress-bar"><div class="progress-fill"></div></div>
+                            </div>
+                            <div class="skill-bar" data-skill="87">
+                                <span>Digital Art</span>
+                                <div class="progress-bar"><div class="progress-fill"></div></div>
+                            </div>
+                            <div class="skill-bar" data-skill="85">
+                                <span>Cultural Curation</span>
+                                <div class="progress-bar"><div class="progress-fill"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <footer-component></footer-component>
+    </footer>
+
+    <script src="../js/components/nav-component.js"></script>
+    <script src="../js/components/footer-component.js"></script>
+    <script src="../js/theme-toggle.js"></script>
+    <script src="../js/text-effects.js"></script>
+    <script src="../js/timeline.js"></script>
+    <script src="../js/geometric-lines.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects - CODENAME_MDS</title>
+  <link rel="stylesheet" href="../style.css" />
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body class="home-page">
+  <div class="grid-background"></div>
+  <div class="geometric-elements">
+    <div class="geometric-element geo-square geo-pos-1"></div>
+    <div class="geometric-element geo-circle geo-pos-2"></div>
+    <div class="geometric-element geo-triangle geo-pos-3"></div>
+    <div class="geometric-element geo-square geo-pos-4"></div>
+    <div class="geometric-element geo-circle geo-pos-5"></div>
+  </div>
+  <header>
+    <nav-component></nav-component>
+  </header>
+  <div class="section-divider"></div>
+  <main>
+    <!-- Projects Hero Banner -->
+    <section class="projects-hero-section">
+      <div class="projects-hero-bg"></div>
+      <div class="projects-hero-content content-container">
+        <h1 class="projects-hero-title">Projects</h1>
+        <p class="projects-hero-desc">Official projects by MODES-X. Produced by Mars D. Silver. Explore the intersection of technology, art, and culture through these featured works.</p>
+      </div>
+    </section>
+    <div class="section-divider"></div>
+    <!-- Projects Cards Section -->
+    <section class="projects-section section-brackets">
+      <div class="content-container">
+        <div class="projects-grid">
+            <div class="projects-images-canvas-wrapper">
+              <canvas id="geometric-lines-canvas"></canvas>
+              <a href="#" class="project-card-image-link projects-image-link-float dynamic-project-image fade-in-up">
+                <img src="/MDSX/assets/images/cyber-logo.jpg" alt="CYBERPLANT Project" class="project-card-image" />
+              </a>
+              <a href="#" class="project-card-image-link projects-image-link-float dynamic-project-image fade-in-up">
+                <img src="/MDSX/assets/images/nexus-black.jpg" alt="NEXUS BLACK: CULTURAL LAB" class="project-card-image" />
+              </a>
+            </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <footer-component></footer-component>
+  </footer>
+  <script src="../js/components/nav-component.js"></script>
+  <script src="../js/components/footer-component.js"></script>
+  <script src="../js/theme-toggle.js"></script>
+  <script src="../js/features/dynamic-scroll.js"></script>
+  <script src="../js/features/text-effects.js"></script>
+  <script src="../js/features/timeline.js"></script>
+  <script src="../js/utils/geometric-lines.js"></script>
+  <script>
+    // Initialize geometric lines only on the projects section
+    document.addEventListener('DOMContentLoaded', function() {
+      const wrapper = document.querySelector('.projects-images-canvas-wrapper');
+      if (wrapper && window.GeometricLines) {
+        new GeometricLines(wrapper);
+      }
+
+      // Parallax and fade-in effect for images
+      const images = document.querySelectorAll('.dynamic-project-image');
+      const fadeInOnScroll = () => {
+        images.forEach(img => {
+          const rect = img.getBoundingClientRect();
+          if (rect.top < window.innerHeight - 60) {
+            img.classList.add('visible');
+          } else {
+            img.classList.remove('visible');
+          }
+        });
+      };
+      window.addEventListener('scroll', fadeInOnScroll);
+      fadeInOnScroll();
+
+      // Parallax effect
+      window.addEventListener('scroll', () => {
+        images.forEach((img, i) => {
+          const speed = 0.15 + i * 0.05;
+          const offset = window.scrollY * speed;
+          img.style.transform = `translateY(${offset}px)`;
+        });
+      });
+    });
+  </script>
+</body>
+</html>
